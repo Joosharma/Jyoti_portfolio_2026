@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+  /* ✅ Font Families */
+  --font-family-primary: "Inter", ui-sans-serif, system-ui;
+  --font-family-display: "Poppins", Georgia, serif;
+
+  /* ✅ Colors */
+  --color-primary-orange: #eb6847;
+  --color-background-main: #0f0f0f;
+  --color-background-next: #151515;
+ --color-background-secondary: #1a1a1a;
+  --color-border-color: #333333;
+  --color-secondary: #3b82f6;
+  --color-background: #101312;
+  --color-background-icons: #2F221E;
+  --color-text-secondary: #999999;
+  --color-text: #f2f2f2;
+  --color-text-blue: #2eb8aa;
+}
