@@ -8,6 +8,7 @@ const TechnologySection = () => {
         "JavaScript",
         "React.js",
         "Next.js",
+        "Angular",
         "Git & GitHub",
         "REST APIs",
       ],

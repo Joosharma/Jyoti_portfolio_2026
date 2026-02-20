@@ -28,11 +28,11 @@ const Form = () => {
   };
 
   return (
-    <div className="sm:w-2/3 max-sm:w-full bg-background-secondary border border-border-color rounded-2xl p-6">
+    <div className="sm:w-2/3 max-sm:w-full bg-background-secondary border border-border-color rounded-2xl p-6 max-sm:p-3">
       <form ref={form} onSubmit={sendEmail}>
         <div className="grid grid-cols-2 gap-3">
           {/* Name */}
-          <div className="text-white">
+          <div className="text-white max-sm:text-sm">
             <label>Your Name</label>
             <input
               type="text"
@@ -44,7 +44,7 @@ const Form = () => {
           </div>
 
           {/* Email */}
-          <div className="text-white">
+          <div className="text-white max-sm:text-sm">
             <label>Your Email</label>
             <input
               type="email"
@@ -57,7 +57,7 @@ const Form = () => {
         </div>
 
         {/* Subject */}
-        <div className="text-white w-full">
+        <div className="text-white w-full  max-sm:text-sm">
           <label>Subject</label>
           <input
             type="text"
@@ -68,7 +68,7 @@ const Form = () => {
         </div>
 
         {/* Message */}
-        <div className="text-white w-full">
+        <div className="text-white w-full  max-sm:text-sm">
           <label>Message</label>
           <textarea
             name="message"

@@ -1,10 +1,11 @@
 import React from "react";
 import { Sun } from "lucide-react";
+import Offcanvas from "./Offcanva";
 const Navbar = () => {
   return (
-    <div>
-      <nav className="bg-background-main border-b  border-solid border-border-color">
-        <div className="container mx-auto flex items-center justify-between  py-4 max-md:px-6">
+    <div className="sticky top-0 z-50">
+      <nav className=" bg-background-main border-b  border-solid border-border-color md:px-6">
+        <div className="container mx-auto flex items-center justify-between  py-4 max-md:px-6 ">
           <a className="text-3xl font-bold text-white">
             Port<span className="text-primary-orange">folio</span>
           </a>
@@ -25,8 +26,9 @@ const Navbar = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
+          
+
           <div className="flex items-center gap-3 text-white max-md:hidden">
-           
             {/* <span>
               <Sun size={20} />
             </span> */}
@@ -40,7 +42,8 @@ const Navbar = () => {
               </a>
             </a>
           </div>
-          <div className="menu md:hidden text-white">
+          {/* mobile menu  */}
+          {/* <button className="menu md:hidden text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -57,7 +60,10 @@ const Navbar = () => {
               <path d="M4 12h16" />
               <path d="M4 19h16" />
             </svg>
-          </div>
+          </button> */}
+          {/* offcanva for menu bar */}
+          <div className="md:hidden"> <Offcanvas  /></div>
+         
         </div>
       </nav>
     </div>

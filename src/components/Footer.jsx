@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-background-main border-t border-solid border-border-color py-6 ">
-      <div className="container mx-auto max-sm:px-5  max-sm:gap-3 flex justify-between max-sm:flex-col items-center">
+      <div className="container mx-auto max-sm:px-5  max-sm:gap-3 flex justify-between max-sm:flex-col items-center md:px-6">
         <a className="text-xl font-bold text-white">
           Port<span className="text-primary-orange">folio</span>
         </a>
@@ -84,7 +84,7 @@ const Footer = () => {
           </a> */}
         </ul>
         <span className="text-text-secondary">
-          © 2024 Jyoti. All rights reserved.
+          © 2026 Jyoti. All rights reserved.
         </span>
       </div>
     </footer>

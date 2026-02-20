@@ -7,7 +7,7 @@ const ProjectContain = ({ title, description, technologies, projectLink }) => {
         <h2 className="uppercase text-sm text-primary-orange text-left font-medium ">
           my work
         </h2>
-        <h3 className="text-4xl max-sm:text-2xl text-white font-bold mb-4">
+        <h3 className="text-4xl text-center max-sm:text-2xl text-white font-bold mb-4">
           <i>{title}</i>
         </h3>
         <p className="text-text-secondary font-medium mb-6 max-md:text-center">

@@ -17,7 +17,7 @@ const MainScreen = () => {
   const info = {
     name: "Jyoti",
     role: "Designer & Developer",
-    about: `Frontend developer focused on building intuitive, responsive user interfaces using HTML, CSS, JavaScript, and React, with an emphasis on clean code, performance optimization, and scalable UI design.`,
+    about: `Frontend Developer focused on building intuitive, responsive user interfaces using HTML, CSS, JavaScript, React, and Angular, with an emphasis on clean code, performance optimization, component-based architecture, and scalable UI design.`,
   };
 
   const statdata = [
@@ -143,17 +143,17 @@ const MainScreen = () => {
   return (
     <div>
       {/* hero section */}
-      <section id="home" className="bg-background-main py-5">
-        <div className="container mx-auto py-6">
+      <section id="home" className="bg-background-main py-5 overflow-hidden">
+        <div className="container mx-auto py-6 md:px-6">
           <h1 className="text-primary-orange uppercase font-medium max-md:text-center">
             {head}
           </h1>
           <div className="grid max-sm:grid-cols-1 md:grid-cols-2  max-md:gap-6">
             {/* content */}
-            <div className="content flex flex-col gap-8 text-text-secondary max-md:items-center max-md:px-5">
-              <h2 className=" max-sm:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold max-md:text-center max-md:leading-8">
+            <div className="content flex flex-col gap-8 text-text-secondary max-md:items-center max-md:px-5 ">
+              <h2 className=" max-sm:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold max-md:text-center max-md:leading-8 max-sm:mt-3">
                 Hi, I'm{" "}
-                <i className="bg-linear-to-r from-orange-400 via-green-400 to-teal-400 bg-clip-text text-transparent">
+                <i className="bg-linear-to-r from-orange-400 via-green-400 to-teal-400 bg-clip-text text-transparent ">
                   {info.name}
                 </i>{" "}
                 {info.role}
@@ -193,7 +193,7 @@ const MainScreen = () => {
                 </span>
               </div> */}
               {/* profile img */}
-              <div className="max-sm:w-85 max-sm:h-85 w-100 h-100 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300 ring-2 ring-primary-orange ">
+              <div className="max-sm:w-80 max-sm:h-80 sm:w-90 sm:h-90  lg:w-100 lg:h-100 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300 ring-2 ring-primary-orange ">
                 <img
                   src={profile}
                   className="h-full w-full object-cover -rotate-10 object-top scale-100 "
@@ -206,21 +206,21 @@ const MainScreen = () => {
       </section>
 
       {/* about section */}
-      <section className="bg-background-next max-sm:py-10 py-20 ">
+      <section className="bg-background-next max-sm:py-10 py-20 overflow-hidden">
         {/* heading */}
         <div>
           <div id="about" className="heading">
             <h2 className="text-sm text-center text-primary-orange uppercase font-bold  mb-4">
               About Me
             </h2>
-            <p className="max-sm:text-3xl text-5xl text-center font-bold text-white max-sm:px-5">
+            <p className="max-sm:text-3xl text-5xl text-center font-bold text-white max-sm:px-5 md:px-5">
               Passionate about creating modern <br />
               <i>frontend experiences</i>
             </p>
           </div>
         </div>
         {/* context and exprs */}
-        <div className="container mx-auto max-sm:px-5 lg:px-40 py-10 grid max-md:grid-cols-1 md:grid-cols-2 max-md:gap-5">
+        <div className="container mx-auto max-sm:px-5 lg:px-40 py-10 grid max-md:grid-cols-1 md:grid-cols-2 max-md:gap-5 md:px-6">
           <div className="text-text-secondary font-medium text-lg flex flex-col items-center justify-center gap-5">
             <p className="max-sm:leading-6 max-sm:text-center">
               I am a frontend developer with a strong focus on building
@@ -229,13 +229,13 @@ const MainScreen = () => {
               experiences using modern frontend technologies.
             </p>
             <p className="max-sm:leading-6 max-sm:text-center">
-              I work with HTML, CSS, JavaScript, React, and Tailwind CSS to
-              create scalable UI components and performance-driven web
+              I work with HTML, CSS, JavaScript, React, Angular and Tailwind CSS
+              to create scalable UI components and performance-driven web
               applications. I am continuously learning and improving my skills
               to deliver better digital experiences.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-5 px-6 ">
+          <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-5 px-6 max-sm:px-0 max-sm:py-5">
             {statdata.map((item) => (
               <div
                 key={item.id}
@@ -252,11 +252,12 @@ const MainScreen = () => {
           </div>
         </div>
         {/* services */}
-        <div className="container mx-auto max-sm:px-5 lg:px-40 grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="container mx-auto max-sm:px-5 lg:px-40 grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:px-6">
           {servicesCardData.map((items) => (
             <div
               key={items.id}
-              className="flex flex-col gap-3 justify-between p-6 items-start shadow-lg bg-background-secondary rounded-3xl border border-border-color"
+              className="flex flex-col gap-3 justify-between p-6 items-start shadow-lg bg-background-secondary rounded-3xl border border-border-color" 
+     
             >
               {/* icon */}
               <span className="text-primary-orange p-3 rounded-xl border border-border-color bg-background-icons cursor-pointer animate-bounce">
@@ -274,9 +275,9 @@ const MainScreen = () => {
       </section>
 
       {/* projects section  */}
-      <section className="bg-background-main">
+      <section className="bg-background-main overflow-hidden">
         {/* heading  */}
-        <div className="heading py-10 max-md:px-5 flex flex-col gap-4">
+        <div className="heading py-10 max-md:px-5 flex flex-col gap-4 md:px-6">
           <h2 className="uppercase text-sm text-primary-orange text-center font-medium">
             my work
           </h2>
@@ -289,7 +290,7 @@ const MainScreen = () => {
           </p>
         </div>
         {/* contain */}
-        <div id="work" className="container mx-auto">
+        <div id="work" className="container mx-auto md:px-6">
           <div className="grid max-md:grid-cols-1 md:grid-cols-2 py-8 max-md:px-5 max-md:gap-6">
             {/* img */}
             <div className="rounded-2xl overflow-hidden " data-aos="fade-left">
@@ -310,18 +311,23 @@ const MainScreen = () => {
           </div>
           <div className="grid max-md:grid-cols-1 max-md:flex max-md:flex-col-reverse md:grid-cols-2 py-8 max-md:px-5 max-md:gap-6">
             <ProjectContain
-              title="Viraj Soft Tech Solution – Frontend Website"
+              title="Viraj Soft Tech Solution "
               description="This project is a complete frontend website developed for Viraj Soft Tech Solution, where I designed and implemented all pages from scratch using Tailwind CSS. The project focuses on building a fully responsive, modern, and consistent UI aligned with the company’s branding and business requirements."
               technologies={["React JS", "Tailwind CSS", "JavaScript", "Vite"]}
             />
             {/* img */}
-            <div className="rounded-2xl overflow-hidden scale-100" data-aos="fade-right">
-              <a href="https://virajsofttechsolutions.com/"> <img
-                src={projectImg2}
-                alt=""
-                className="h-full w-full hover:scale-105   duration-300 ease-in-out cursor-pointer"
-              /></a>
-             
+            <div
+              className="rounded-2xl overflow-hidden scale-100"
+              data-aos="fade-right"
+            >
+              <a href="https://virajsofttechsolutions.com/">
+                {" "}
+                <img
+                  src={projectImg2}
+                  alt=""
+                  className="h-full w-full hover:scale-105   duration-300 ease-in-out cursor-pointer"
+                />
+              </a>
             </div>
           </div>
           <div className="grid max-md:grid-cols-1 md:grid-cols-2 py-8 max-md:px-5 max-md:gap-6">
@@ -337,7 +343,7 @@ const MainScreen = () => {
               </a>
             </div>
             <ProjectContain
-              title="Shaadi Jeevan – Web Design Contribution"
+              title="Shaadi Jeevan"
               description="This project is a modern matrimonial platform where I contributed to the web designing and frontend styling using Tailwind CSS. My role focused on building responsive layouts, designing UI components, and maintaining visual consistency across different pages"
               technologies={["Tailwind CSS"]}
             />
@@ -345,7 +351,7 @@ const MainScreen = () => {
         </div>
       </section>
       {/* skill */}
-      <section className="bg-background-next max-lg:py-10 lg:py-20 ">
+      <section className="bg-background-next max-lg:py-10 lg:py-20 overflow-hidden">
         <div
           id="skills"
           className="container mx-auto max-sm:px-5 sm:px-10  lg:px-40 py-6"
@@ -372,24 +378,25 @@ const MainScreen = () => {
             <SkillBar skill="CSS" percentage={95} />
             <SkillBar skill="JavaScript" percentage={86} />
             <SkillBar skill="Tailwind Css" percentage={98} />
-            <SkillBar skill="React JS" percentage={80} />
-            <SkillBar skill="Redux Toolkit" percentage={95} />
+            <SkillBar skill="Bootstrap" percentage={90} />
+            <SkillBar skill="jQuery" percentage={85} />
+            <SkillBar skill="React js" percentage={94} />
+            <SkillBar skill="Angular" percentage={93} />
+            <SkillBar skill="Redux Toolkit" percentage={80} />
+            <SkillBar skill="Next js" percentage={90} />
           </div>
           {/* technologies work with */}
           <TechnologySection />
         </div>
       </section>
       {/* contact */}
-      <section className="bg-background-main border-b border-solid border-border-color max-lg:py-10 lg:py-20 ">
+      <section className="bg-background-main border-b border-solid border-border-color max-lg:py-10 lg:py-20  overflow-hidden">
         <div
           id="contact"
           className="container mx-auto max-sm:px-5   lg:px-30 py-6"
         >
           {/* heading */}
-          <div
-            className="flex flex-col gap-6 heading text-center"
-           
-          >
+          <div className="flex flex-col gap-6 heading text-center">
             <h2 className="uppercase text-lg text-primary-orange font-medium">
               Get in Touch
             </h2>
@@ -402,7 +409,7 @@ const MainScreen = () => {
             </p>
           </div>
           <div className="w-full py-10 flex max-sm:flex-wrap gap-9 ">
-            <div className="sm:w-1/3 max-sm:w-full flex flex-col max-sm:flex-wrap gap-10">
+            <div className="sm:w-1/3 max-sm:w-full flex flex-col max-sm:flex-wrap gap-10 ">
               <div className="flex flex-col gap-6">
                 <div className="flex gap-3">
                   <span className="text-primary-orange p-3 rounded-xl   bg-background-icons">
@@ -472,7 +479,7 @@ const MainScreen = () => {
                   <ul className="leading-5">
                     <li className="text-white font-medium">Location</li>
                     <li className="text-text-secondary">
-                      Jabalpur.Madhya Pradesh
+                      Jabalpur, Madhya Pradesh
                     </li>
                   </ul>
                 </div>
@@ -487,12 +494,12 @@ const MainScreen = () => {
                 </p>
               </div>
               {/* whatsapp floating button */}
-              <div className="floating_whatsapp ">
+              <div className="floating_whatsapp overflow-hidden">
                 <a
                   href="https://wa.me/917748945408?text=Hello%20Jyoti,%20I%20visited%20your%20portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" fixed bottom-10 right-10 500  text-white bg-green-500  rounded-full shadow-lg hover:scale-110 transition-all duration-300 z-50 overflow-hidden  animate-bounce"
+                  className=" fixed bottom-10 z-20 max-sm:left-[10%]  sm:right-[10%] 500  text-white bg-green-500  rounded-full shadow-lg hover:scale-110 transition-all duration-300 overflow-hidden  animate-bounce"
                 >
                   <i className="fa-brands fa-whatsapp text-4xl bg-green-500 hover:bg-green-600 py-3 px-4"></i>
                 </a>
