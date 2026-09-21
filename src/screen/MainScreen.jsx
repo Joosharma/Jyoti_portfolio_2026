@@ -6,8 +6,9 @@ import TechnologySection from "../components/TechnologySection";
 import projectImg1 from "../assets/project-1-img.jpg";
 import projectImg2 from "../assets/project-2-img.jpg";
 import projectImg3 from "../assets/project-3-img.jpeg";
+import projectImg4 from "../assets/sca.jpeg";
 import profile from "../assets/jyoti-profile.jpg";
-import resume from "../../public/Jyoti_resume_2026.pdf";
+import resume from "../../public/Jyoti_resume_2A26.pdf";
 import Form from "../components/Form";
 // https://github.com/Joosharma
 
@@ -347,6 +348,28 @@ const MainScreen = () => {
               description="This project is a modern matrimonial platform where I contributed to the web designing and frontend styling using Tailwind CSS. My role focused on building responsive layouts, designing UI components, and maintaining visual consistency across different pages"
               technologies={["Tailwind CSS"]}
             />
+          </div>
+          {/* angular project */}
+          <div className="grid max-md:grid-cols-1 max-md:flex max-md:flex-col-reverse md:grid-cols-2 py-8 max-md:px-5 max-md:gap-6">
+            <ProjectContain
+              title="School Website – Seth Chhoteylal Academy "
+              description="A responsive school website developed for Seth Chhoteylal Academy, a CBSE-affiliated senior secondary school. The website provides students and parents with easy access to school information, gallery, ERP, MPD, latest updates, admission enquiries, and support services. I focused on creating a clean, responsive, and user-friendly interface with smooth navigation across devices."
+              technologies={["html","css", "Tailwind CSS", "JavaScript", "Laravel", "UI/UX"]}
+            />
+            {/* img */}
+            <div
+              className="rounded-2xl overflow-hidden scale-100"
+              data-aos="fade-right"
+            >
+              <a href="https://scarath.in/">
+                {" "}
+                <img
+                  src={projectImg4}
+                  alt=""
+                  className="h-[80%] w-full hover:scale-105   duration-300 ease-in-out cursor-pointer"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
