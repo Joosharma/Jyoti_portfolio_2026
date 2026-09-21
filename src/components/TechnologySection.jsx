@@ -5,12 +5,15 @@ const TechnologySection = () => {
       technology: [
         "HTML5",
         "CSS3",
+        "Tailwind CSS",
+        "Bootstrap",
         "JavaScript",
         "React.js",
-        "Next.js",
+        "Node.js",
         "Angular",
         "Git & GitHub",
         "REST APIs",
+        "Postgresql",
       ],
     },
   ];

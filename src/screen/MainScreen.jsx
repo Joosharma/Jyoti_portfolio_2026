@@ -349,7 +349,7 @@ const MainScreen = () => {
               technologies={["Tailwind CSS"]}
             />
           </div>
-          {/* angular project */}
+          {/* sca project */}
           <div className="grid max-md:grid-cols-1 max-md:flex max-md:flex-col-reverse md:grid-cols-2 py-8 max-md:px-5 max-md:gap-6">
             <ProjectContain
               title="School Website – Seth Chhoteylal Academy "
@@ -402,11 +402,11 @@ const MainScreen = () => {
             <SkillBar skill="JavaScript" percentage={86} />
             <SkillBar skill="Tailwind Css" percentage={98} />
             <SkillBar skill="Bootstrap" percentage={90} />
-            <SkillBar skill="jQuery" percentage={85} />
+            <SkillBar skill="Postgresql" percentage={80} />
             <SkillBar skill="React js" percentage={94} />
             <SkillBar skill="Angular" percentage={93} />
             <SkillBar skill="Redux Toolkit" percentage={80} />
-            <SkillBar skill="Next js" percentage={90} />
+            <SkillBar skill="Node.js" percentage={80} />
           </div>
           {/* technologies work with */}
           <TechnologySection />
